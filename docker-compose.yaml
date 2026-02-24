@@ -1,0 +1,15 @@
+services:
+  postgres:
+    container_name: ss2-postgres
+    image: 'postgres:latest'
+    restart: unless-stopped
+    environment:
+      - 'POSTGRES_DB=ss2'
+      - 'POSTGRES_PASSWORD=ss2-db'
+      - 'POSTGRES_USER=ss2-root'
+    ports:
+      - '5434:5432'
+    volumes:
+      - pg_ss2_data:/data/postgres
+volumes:
+  pg_ss2_data:

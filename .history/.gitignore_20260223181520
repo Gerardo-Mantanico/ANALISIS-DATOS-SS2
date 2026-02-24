@@ -1,0 +1,26 @@
+# Ignore Python compiled files
+*.pyc
+__pycache__/
+
+# Ignore history folder
+history/
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore virtual environments
+venv/
+.env/
+
+# Ignore other common files
+*.pyo
+*.pyd
+*.swp
+*.bak
+*.tmp
+
+# Ignore macOS files
+.DS_Store
+
+# Ignore VS Code settings
+.vscode/
